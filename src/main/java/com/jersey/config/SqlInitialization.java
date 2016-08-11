@@ -27,7 +27,7 @@ public class SqlInitialization{
 /*        dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mycookbook");
         dataSource.setUsername("postgres");
         dataSource.setPassword("");*/
-        dataSource.setUrl("jdbc:postgresql://ec2-54-225-81-90.compute-1.amazonaws.com:5432/d7vm851djfv8ab");
+        dataSource.setUrl("jdbc:postgresql://ec2-54-225-81-90.compute-1.amazonaws.com:5432/d7vm851djfv8ab?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory");
         dataSource.setUsername("ltqrhxpqpyjvmz");
         dataSource.setPassword("rRVGGqsC0O_2bY6kjSqldovMKA");
         return dataSource;
