@@ -13,6 +13,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.sql.DataSource;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 @Configuration
 @EnableJpaRepositories(basePackages = "com.jersey.persistance")
@@ -22,9 +24,12 @@ public class SqlInitialization{
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mycookbook");
+/*        dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mycookbook");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("12345678@X");
+        dataSource.setPassword("");*/
+        dataSource.setUrl("jdbc:postgresql://ec2-54-225-81-90.compute-1.amazonaws.com:5432/d7vm851djfv8ab");
+        dataSource.setUsername("ltqrhxpqpyjvmz");
+        dataSource.setPassword("rRVGGqsC0O_2bY6kjSqldovMKA");
         return dataSource;
     }
 
