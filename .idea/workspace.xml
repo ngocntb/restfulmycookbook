@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afda445c-d266-4b1c-8a96-cb3aa68ae2c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jersey/config/SqlInitialization.java" afterPath="$PROJECT_DIR$/src/main/java/com/jersey/config/SqlInitialization.java" />
-    </list>
+    <list default="true" id="afda445c-d266-4b1c-8a96-cb3aa68ae2c9" name="Default" comment="" />
     <ignored path="spring-boot-jersey-hibernate.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="SqlInitialization.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SqlInitialization.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jersey/config/SqlInitialization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5401786">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="165" selection-start-line="29" selection-start-column="165" selection-end-line="29" selection-end-column="165" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.835821">
-              <caret line="66" column="30" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.3329098">
+              <caret line="99" column="33" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -342,7 +339,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Audi/Sample/spring-boot-jersey-hibernate-master/src/main/java/com/jersey/resources/CategoryResource.java" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -681,7 +678,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45772266" sideWeight="0.5021436" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2328125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45772266" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45772266" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.49785638" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25777063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1203,17 +1200,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.835821">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jersey/config/SqlInitialization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5401786">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="165" selection-start-line="29" selection-start-column="165" selection-end-line="29" selection-end-column="165" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1222,6 +1211,14 @@
             <element signature="e#3586#3587#0" expanded="true" />
             <element signature="e#3654#3655#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3329098">
+          <caret line="99" column="33" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
