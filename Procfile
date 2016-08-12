@@ -1,1 +1,1 @@
-web: java -jar target/spring-boot-jersey-hibernate-1.0-SNAPSHOT.war
+web: java -jar target/spring-boot-jersey-hibernate-1.0-SNAPSHOT.jar
