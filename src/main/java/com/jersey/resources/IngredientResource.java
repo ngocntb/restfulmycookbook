@@ -29,6 +29,11 @@ public class IngredientResource {
         mRecipeDao = recipeDao;
     }
 
+    /**
+     * Get all Ingredients
+     * @return Ingredients
+     */
+
     @GET
     public List<Ingredient> getAll(){
         return mIngredientDao.findAll();

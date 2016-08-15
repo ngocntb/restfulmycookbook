@@ -41,24 +41,22 @@ public class Recipe {
     @Column(name = "upload_date")
     private Date uploadedDate;
 
-/*
-    @OneToMany(mappedBy = "recipe")
-    private Set<Direction> directions;
-
-    @OneToMany(mappedBy = "recipe")
-    private Set<Ingredient> ingredients;
-*/
-
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name="recipe_id")
     @OrderBy("step")
     private Set<Direction> directions;
 
-
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name="recipe_id")
     @OrderBy("id")
     private Set<Ingredient> ingredients;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "category_recipe",
+            joinColumns = @JoinColumn(name="recipe_id"),
+            inverseJoinColumns = @JoinColumn(name="category_id"))
+
+    private Set<Category> categories;
 
     public Recipe(){}
 
@@ -170,6 +168,14 @@ public class Recipe {
 
     public void setUploadedDate(Date uploadedDate) {
         this.uploadedDate = uploadedDate;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 
 }

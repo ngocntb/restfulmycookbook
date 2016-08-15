@@ -3,6 +3,8 @@ package com.jersey.resources;
 import com.jersey.persistance.CategoryDao;
 import com.jersey.representations.Category;
 
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import javax.inject.Inject;
@@ -39,13 +41,19 @@ public class CategoryResource {
         return mCategoryDao.findAll();
     }
 
+    /**
+     * Get Level 1 Categories
+     * @return categories
+     */
+
     @GET
     @Path("/parent")
     public List<Category> getParent(){
         return mCategoryDao.findParentCats();
     }
+
     /**
-     * Get single Category
+     * Get Level 2 Categories
      * @param parent_id
      * @return categories
      */
@@ -73,23 +81,28 @@ public class CategoryResource {
     }
 
     /**
-     * Get single Category
-     * @param id
-     * @return category
+     * Get Recipes of Category
+     * @param id - category id
+     *        page - page number
+     *        limit - max number per page
+     * @return category that include its recipes
      */
 
-    @GET
+/*    @GET
     @Path("/recipes")
-    public Category getRecipesCategory(@QueryParam("id")Long id) {
-        Category category = mCategoryDao.getRecipesCategory(id);
+    public Category getRecipesCategory(@QueryParam("id")Long id,
+                                       @QueryParam("page") Integer page,
+                                       @QueryParam("limit") Integer limit) {
+        Pageable pageable = new PageRequest(page, limit);
+        Category category = mCategoryDao.getRecipesCategory(id, pageable);
         if (category == null) {
             throw new WebApplicationException((Response.Status.NOT_FOUND));
         }
         return category;
-    }
+    }*/
 
     /**
-     * Create new Category
+     * Save category
      * @param category
      * @return new category
      */

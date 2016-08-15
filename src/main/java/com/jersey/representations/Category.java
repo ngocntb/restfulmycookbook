@@ -26,12 +26,12 @@ public class Category {
     @OneToMany(mappedBy = "parentCat")
     private Set<Category> childCats;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+/*    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "category_recipe",
                 joinColumns = @JoinColumn(name="category_id"),
                 inverseJoinColumns = @JoinColumn(name="recipe_id"))
 
-    private Set<Recipe> recipes;
+    private Set<Recipe> recipes;*/
 
     public Category(){}
 
@@ -79,12 +79,12 @@ public class Category {
         this.parentCat = parentCat;
     }
 
-    public Set<Recipe> getRecipes() {
+/*    public Set<Recipe> getRecipes() {
         return this.recipes;
     }
 
     public void setRecipes(Set<Recipe> recipes) {
         this.recipes = recipes;
-    }
+    }*/
 
 }

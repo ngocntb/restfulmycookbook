@@ -30,6 +30,11 @@ public class DirectionResource {
         mRecipeDao = recipeDao;
     }
 
+    /**
+     * Get all Directions
+     * @return Directions
+     */
+
     @GET
     public List<Direction> getAll(){
         return mDirectionDao.findAll();

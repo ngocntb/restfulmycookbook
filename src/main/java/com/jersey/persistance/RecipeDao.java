@@ -20,4 +20,7 @@ public interface RecipeDao extends JpaRepository<Recipe, Long> {
 
     @Query("SELECT r FROM Recipe r JOIN FETCH r.directions d WHERE r.id = :id order by d.step asc")
     Recipe getDirectionsByRecipe(@Param("id") Long id);
+
+    @Query("SELECT r FROM Recipe r JOIN FETCH r.categories c WHERE c.id = :id order by r.uploadedDate desc, r.id asc")
+    List<Recipe> getRecipesCategory(@Param("id") Long categoryId, Pageable pageable);
 }
