@@ -24,12 +24,12 @@ public class SqlInitialization{
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-/*        dataSource.setUrl("jdbc:postgresql://localhost:5432/mycookbook");
+    /*    dataSource.setUrl("jdbc:postgresql://localhost:5432/mycookbook");
         dataSource.setUsername("postgres");
         dataSource.setPassword("");*/
         dataSource.setUrl("jdbc:postgresql://ec2-54-225-81-90.compute-1.amazonaws.com:5432/d7vm851djfv8ab?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory");
         dataSource.setUsername("ltqrhxpqpyjvmz");
-        dataSource.setPassword("rRVGGqsC0O_2bY6kjSqldovMKA"); 
+        dataSource.setPassword("rRVGGqsC0O_2bY6kjSqldovMKA");
         return dataSource;
     }
 
