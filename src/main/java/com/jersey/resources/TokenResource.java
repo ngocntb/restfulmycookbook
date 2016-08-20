@@ -29,7 +29,7 @@ public class TokenResource {
         mTokenDao = tokenDao;
     }
 
-    /**
+     /**
      * Get tokens
      * @return tokens
      */
@@ -44,7 +44,9 @@ public class TokenResource {
      */
     @POST
     public Token save(@Valid Token token) {
-        return mTokenDao.save(token);
+        if(mTokenDao.findToken(token.getToken()) == null)
+            return mTokenDao.save(token);
+        else return null;
     }
 
     /**
